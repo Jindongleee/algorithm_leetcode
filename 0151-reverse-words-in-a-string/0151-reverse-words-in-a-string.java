@@ -1,7 +1,9 @@
 class Solution {
     public String reverseWords(String s) {
         //word & space seperating 
+        //trim = 좌우 공백 제거
         s=s.trim();
+        // 중간에 연속된 공백 제거
         s=s.replaceAll("\\s+"," ");
 
         String[] word=s.split(" ");
